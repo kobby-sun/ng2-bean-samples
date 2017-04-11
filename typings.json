@@ -1,0 +1,15 @@
+{
+  "globalDependencies": {
+    "angular-protractor": "registry:dt/angular-protractor#1.5.0+20160425143459",
+    "core-js": "registry:dt/core-js#0.0.0+20160602141332",
+    "hammerjs": "registry:dt/hammerjs#2.0.4+20160417130828",
+    "jasmine": "registry:dt/jasmine#2.2.0+20160621224255",
+    "node": "registry:dt/node#6.0.0+20160621231320",
+    "selenium-webdriver": "registry:dt/selenium-webdriver#2.44.0+20160317120654",
+    "source-map": "registry:dt/source-map#0.0.0+20160317120654",
+    "uglify-js": "registry:dt/uglify-js#2.6.1+20160316155526",
+    "webpack": "registry:dt/webpack#1.12.9+20160523035535",
+    "moment": "registry:dt/moment#2.8.0+20160316155526",
+    "moment-timezone": "github:DefinitelyTyped/DefinitelyTyped/moment-timezone/moment-timezone.d.ts#f8a90040348e83926f44e690b209769c4f88b961"
+  }
+}

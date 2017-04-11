@@ -1,0 +1,42 @@
+<div class="ui container">
+        <h2>NG2 Bean Samples</h2>
+        <hr/>
+        <br/>
+        <h3>UIFormComponent</h3>
+
+        <div class="ui segment">
+
+                <ui-tabs #myTabs tabIndex="sample">
+                        <ui-tab [tabIndex]="myTabs.tabIndex" [settings]="{uid: 'markup', title: 'Markup'}">
+
+                                <pre><code class="markup-css" [innerHTML]="markup_html"></code></pre>
+
+                        </ui-tab>
+                        <ui-tab [tabIndex]="myTabs.tabIndex" [settings]="{uid: 'ts', title: 'Ts'}">
+                                <pre><code class="javascript-css" [innerHTML]="ts_html"></code></pre>
+
+                        </ui-tab>
+                        <ui-tab [tabIndex]="myTabs.tabIndex" [settings]="{uid: 'config', title: 'Model'}">
+                                <pre><code class="javascript-css" [innerHTML]="model_html"></code></pre>
+
+                        </ui-tab>
+                        <ui-tab [tabIndex]="myTabs.tabIndex" [settings]="{uid: 'sample', title: 'Sample'}">
+                                <div class="ignored info ui message">Address Form</div>
+                                <div class="ui message" *ngIf="saved">
+                                        <div class="header">
+                                                Form saved!
+                                        </div>
+                                        <p>{{formData | json}}</p>
+                                        <div>
+                                                <button class="ui button" (click)="resetForm()">Reset</button>
+                                        </div>
+                                </div>
+                                <ui-form *ngIf="!saved" [form]="formModel" [value]="formValue" (onControlInit)="ctlInit($event)" (onControlChange)="ctlChange($event)"
+                                        (onClose)="closeForm($event)" (onSubmit)="saveForm($event)"></ui-form>
+                        </ui-tab>
+                </ui-tabs>
+        </div>
+
+        <br/><br/>
+
+</div>
